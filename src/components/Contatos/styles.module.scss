@@ -1,9 +1,132 @@
 .contatos {
+  margin: 1px 0 0;
   padding: 1rem;
   background-color: rgb(255, 255, 255);
 
   h1 {
     font-size: 2.5rem;
     text-align: center;
+  }
+
+  .container {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    .perfil {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img {
+        border-radius: 50%;
+        height: 80px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .container2 {
+      max-width: 1400px;
+      display: flex;
+      gap: 1rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .whats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    h3 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      button {
+        display: flex;
+        align-items: center;
+        border: 2px solid rgb(37, 211, 102);
+        border-radius: 10px;
+        background-color: black;
+        color: rgb(37, 211, 102);
+        font-size: 1.7rem;
+        padding: 0 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .contatos {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .container {
+      .perfil {
+        img {
+        }
+
+        a {
+        }
+      }
+
+      .container2 {
+        img {
+        }
+      }
+    }
+
+    .whats {
+      h3 {
+      }
+      a {
+        button {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contatos {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .container {
+      .perfil {
+        img {
+        }
+
+        a {
+        }
+      }
+
+      .container2 {
+        flex-direction: column;
+
+        img {
+        }
+      }
+    }
+
+    .whats {
+      h3 {
+      }
+      a {
+        button {
+        }
+      }
+    }
   }
 }

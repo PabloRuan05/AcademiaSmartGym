@@ -12,7 +12,7 @@ function Sobre() {
           </p>
         </div>
         <div className={styles.cardhf}>
-          <h2>Horário de Funcionamento</h2>
+          <h2>Horário de Funcionamento:</h2>
           <div className={styles.list}>
             <h4>Segunda a Sexta</h4>
             <h6>5:30 ás 22:30</h6>
