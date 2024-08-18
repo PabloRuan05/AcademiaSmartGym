@@ -9,7 +9,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 function Contatos() {
   return (
     <section id="Contatos" className={style.contatos}>
-      <h1>Já segue a gente no Instagram?</h1>
+      <h1>Já segue a gente no Instagram ?</h1>
       <div className={style.container}>
         <div className={style.perfil}>
           <img src={logo} alt="" />
@@ -45,7 +45,7 @@ function Contatos() {
         </div>
       </div>
       <div className={style.whats}>
-        <h3>Ou entre em contato pelo Whatsapp:</h3>
+        <h3>Chame-nos no Whatsapp:</h3>
         <a href="https://api.whatsapp.com/send?phone=55989886109987">
           <button>
             <FaWhatsapp />

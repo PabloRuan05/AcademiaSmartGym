@@ -38,19 +38,36 @@ header {
         a:hover {
           transition: 8ms;
           color: rgb(255, 208, 0);
-          // text-decoration: underline;
         }
       }
     }
+  }
+  button {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+
+    border: 1px solid white;
   }
 }
 
 @media screen and (max-width: 767px) {
   header {
     .container {
-      justify-content: center;
+      display: flex;
+      justify-content: space-around;
       nav {
         display: none;
+      }
+      button {
+        display: flex;
+        cursor: pointer;
+        font-size: 2rem;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
       }
     }
   }

@@ -1,12 +1,17 @@
 import styles from "./styles.module.scss";
-import logosmartgym from "../../assets/img/logosmartgym.jpg";
+import { IoMdMenu } from "react-icons/io";
+
 function Header() {
+  function MostrarNavbar() {
+    document.getElementsByTagName("nav").style.width = "250px";
+  }
   return (
     <header>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <a href="">SmartGym</a>
+          <a href="index.hmtl">SmartGym</a>
         </div>
+
         <nav>
           <ul>
             <li>
@@ -26,6 +31,9 @@ function Header() {
             </li>
           </ul>
         </nav>
+        <button onClick={MostrarNavbar}>
+          <IoMdMenu />
+        </button>
       </div>
     </header>
   );

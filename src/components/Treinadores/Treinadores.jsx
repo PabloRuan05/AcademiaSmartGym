@@ -6,7 +6,7 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 function Treinadores() {
   return (
     <section id="Treinadores" className={style.treinadores}>
-      <h1 className={style.title}>Personal Trainers</h1>
+      <h1 className={style.title}>Trainers</h1>
       <div className={style.container}>
         <div className={style.card}>
           <img src={daniel} alt="" />
